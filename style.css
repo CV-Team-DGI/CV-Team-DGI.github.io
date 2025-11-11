@@ -1,0 +1,499 @@
+:root {
+  --md-sys-color-primary: #1976d2;
+  --md-sys-color-on-primary: #ffffff;
+  --bg-color: #f5f5f5;
+  --surface-color: #ffffff;
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --border-color: #e0e0e0;
+}
+
+/* Dark mode color scheme: */
+body.dark-mode {
+  --bg-color: #121212;
+  --surface-color: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #2e2e2e;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  padding-bottom: 80px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Language font sytling */
+body[lang="hi"],
+body[lang="mr"],
+[lang="hi"],
+[lang="mr"],
+.lang-hi,
+.lang-mr {
+  font-family: "Noto Sans Devanagari", "Roboto", sans-serif;
+}
+
+body[lang="pa"],
+[lang="pa"],
+.lang-pa {
+  font-family: "Noto Sans Gurmukhi", "Roboto", sans-serif;
+}
+
+body[lang="gu"],
+[lang="gu"],
+.lang-gu {
+  font-family: "Noto Sans Gujarati", "Roboto", sans-serif;
+}
+
+/* Ensure proper text rendering for Indian scripts */
+.indian-lang {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: var(--md-sys-color-primary);
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--text-primary);
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.tab-panel {
+  padding: 30px;
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.settings-card,
+.theme-card,
+.license-card {
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}
+
+.settings-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-label .material-symbols-outlined {
+  color: var(--md-sys-color-primary);
+  font-size: 24px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--md-sys-color-primary);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.theme-option {
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.theme-option:hover {
+  border-color: var(--md-sys-color-primary);
+  transform: translateY(-2px);
+}
+
+.theme-option.selected {
+  border-color: var(--md-sys-color-primary);
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.theme-preview {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.theme-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+}
+
+md-filled-text-field {
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-row md-filled-text-field {
+  flex: 1;
+}
+
+select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--surface-color);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 120px;
+}
+
+.nav-item:hover .nav-content {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.nav-item.active .nav-content {
+  background-color: rgba(25, 118, 210, 0.12);
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-icon-wrapper {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.nav-item .material-symbols-outlined {
+  font-size: 28px;
+  color: #5f6368;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover .material-symbols-outlined,
+.nav-item.active .material-symbols-outlined {
+  color: #1976d2;
+}
+
+.nav-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5f6368;
+  transition: color 0.3s ease;
+  letter-spacing: 0.4px;
+}
+
+.nav-item:hover .nav-label,
+.nav-item.active .nav-label {
+  color: #1976d2;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.menu-button .material-symbols-outlined {
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.menu-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: var(--text-primary);
+}
+
+.menu-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.menu-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.menu-item:hover {
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.menu-item .material-symbols-outlined {
+  font-size: 20px;
+  color: var(--md-sys-color-primary);
+}
+
+@media (max-width: 640px) {
+  .bottom-nav {
+    height: 70px;
+  }
+
+  .nav-item .material-symbols-outlined {
+    font-size: 24px;
+  }
+
+  .nav-label {
+    font-size: 11px;
+  }
+
+  .nav-content {
+    padding: 6px 12px;
+  }
+}
+
+/* Certification Entry Styling */
+.certification-entry {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--surface-variant, #f5f5f5);
+  position: relative;
+}
+
+.dark-mode .certification-entry {
+  background: var(--surface-variant, #2c2c2c);
+}
+
+.certification-entry h3 {
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.certification-entry md-icon-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+/* ATS Badge Styling */
+.ats-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid #c8e6c9;
+}
+
+.dark-mode .ats-badge {
+  background: #1b5e20;
+  color: #a5d6a7;
+  border-color: #2e7d32;
+}
+
+/* Utility Classes */
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-blue-500 {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.text-blue-500:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .text-blue-500 {
+  color: #64b5f6;
+}

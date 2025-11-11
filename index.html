@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CV Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Noto Sans fonts for Indian languages -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Noto+Sans+Gurmukhi:wght@400;500;700&family=Noto+Sans+Gujarati:wght@400;500;700&family=Noto+Nastaliq:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- Added Tailwind CSS locally for best performance -->
+    <script src="tailwaind.js"></script>
+    <script type="module" src="https://esm.run/@material/web/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#1976d2',
+              'primary-container': '#d3e3fd',
+              'on-primary': '#ffffff',
+              'on-primary-container': '#001b3e',
+              'error': '#ba1a1a',
+              'error-container': '#ffdad6',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50">
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      
+      <!-- HOME PAGE -->
+      <div id="home-page" class="page active">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <div style="flex: 1;"></div>
+          <div style="display: flex; justify-content: center; flex: 1;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: transparent; background-color: transparent; color-scheme: light dark;" version="1.1" width="85px" height="78px" viewBox="0 0 131 121"><defs/><g><g data-cell-id="0"><g data-cell-id="1"><g data-cell-id="xYIYWTR4fBfemMnxKGOw-1"><g transform="translate(0.5,0.5)"><rect x="0" y="80" width="130" height="40" fill="#1ba1e2" stroke="#006eaf" pointer-events="all" style="fill: light-dark(rgb(27, 161, 226), rgb(25, 140, 196)); stroke: light-dark(rgb(0, 110, 175), rgb(81, 175, 231));"/></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-2"><g transform="translate(0.5,0.5)"><ellipse cx="65" cy="40" rx="40" ry="40" fill="#008a00" stroke="#005700" pointer-events="all" style="fill: light-dark(rgb(0, 138, 0), rgb(67, 186, 67)); stroke: light-dark(rgb(0, 87, 0), rgb(130, 205, 130));"/></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-4"><g transform="translate(0.5,0.5)"><rect x="30" y="30" width="70" height="50" fill="none" stroke="none" pointer-events="all"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 60px; height: 1px; padding-top: 37px; margin-left: 36px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; max-height: 46px; overflow: hidden; color: #000000; "><div style="display: inline-block; font-size: 42px; font-family: Garamond; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">CV</div></div></div></foreignObject><text x="36" y="79" fill="light-dark(#000000, #ffffff)" font-family="Garamond" font-size="42px" font-weight="bold">CV</text></switch></g></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-5"><g transform="translate(0.5,0.5)"><rect x="5" y="70" width="120" height="40" fill="none" stroke="none" pointer-events="all"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 110px; height: 1px; padding-top: 77px; margin-left: 10px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; max-height: 36px; overflow: hidden; color: #000000; "><div style="display: inline-block; font-size: 37px; font-family: 'Times New Roman'; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Builder</div></div></div></foreignObject><text x="65" y="114" fill="light-dark(#000000, #ffffff)" font-family="'Times New Roman'" font-size="37px" text-anchor="middle">Builder</text></switch></g></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-9"><g><path d="M 35 50 Q 55 20 70 35 Q 85 50 77.5 40 Q 70 30 50 15 Q 30 0 55 20" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g></g></g></g></svg>
+          </div>
+          <div style="flex: 1; display: flex; justify-content: flex-end;">
+            <div class="menu-container">
+              <button class="menu-button" id="menuButton">
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+              <div class="menu-dropdown" id="menuDropdown">
+                <div class="menu-item" data-action="credit">
+                  <span class="material-symbols-outlined">workspace_premium</span>
+                  <span data-translate="menu_credit">Credit</span>
+                </div>
+                <div class="menu-item" data-action="about">
+                  <span class="material-symbols-outlined">info</span>
+                  <span data-translate="menu_about">About</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <md-tabs aria-label="Resume Sections">
+          <md-primary-tab id="personal-info-tab" aria-controls="personal-info-panel">
+            <md-icon slot="icon">
+              <span class="material-symbols-outlined">id_card</span>
+            </md-icon>
+            <span data-translate="personal_info">Personal Info</span>
+          </md-primary-tab>
+          <md-primary-tab id="experience-tab" aria-controls="experience-panel">
+            <md-icon slot="icon">work</md-icon>
+            <span data-translate="experience">Experience</span>
+          </md-primary-tab>
+          <md-primary-tab id="education-tab" aria-controls="education-panel">
+            <md-icon slot="icon">school</md-icon>
+            <span data-translate="education">Education</span>
+          </md-primary-tab>
+          <md-primary-tab id="skills-tab" aria-controls="skills-panel">
+            <md-icon slot="icon">stars</md-icon>
+            <span data-translate="skills">Skills</span>
+          </md-primary-tab>
+          <md-primary-tab id="certifications-tab" aria-controls="certifications-panel">
+            <md-icon slot="icon">workspace_premium</md-icon>
+            <span data-translate="certifications">Certifications</span>
+          </md-primary-tab>
+        </md-tabs>
+
+        <div id="personal-info-panel" class="tab-panel" role="tabpanel" aria-labelledby="personal-info-tab">
+          <h2 data-translate="personal_info">Personal Information</h2>
+          <md-filled-text-field label="Full Name" id="fullName" required style="width: 100%"></md-filled-text-field>
+          <div class="form-row">
+            <md-filled-text-field label="Email" id="email" type="email" required></md-filled-text-field>
+            <md-filled-text-field label="Phone" id="phone" type="tel" required></md-filled-text-field>
+          </div>
+          <md-filled-text-field label="Address" id="address" style="width: 100%"></md-filled-text-field>
+          <md-filled-text-field label="LinkedIn (optional)" id="linkedin" style="width: 100%"></md-filled-text-field>
+        </div>
+
+        <div id="experience-panel" class="tab-panel" role="tabpanel" aria-labelledby="experience-tab" hidden>
+          <h2 data-translate="experience">Work Experience</h2>
+          <md-filled-text-field label="Job Title" id="jobTitle" style="width: 100%"></md-filled-text-field>
+          <md-filled-text-field label="Company" id="company" style="width: 100%"></md-filled-text-field>
+          <div class="form-row">
+            <md-filled-text-field label="Start Date" id="expStartDate" type="date"></md-filled-text-field>
+            <md-filled-text-field label="End Date" id="expEndDate" type="date"></md-filled-text-field>
+          </div>
+          <md-filled-text-field label="Description" id="expDescription" type="textarea" rows="5" style="width: 100%"></md-filled-text-field>
+        </div>
+
+        <div id="education-panel" class="tab-panel" role="tabpanel" aria-labelledby="education-tab" hidden>
+          <h2 data-translate="education">Education</h2>
+          <md-filled-text-field label="Degree" id="degree" style="width: 100%"></md-filled-text-field>
+          <md-filled-text-field label="School" id="school" style="width: 100%"></md-filled-text-field>
+          <div class="form-row">
+            <md-filled-text-field label="Start Date" id="eduStartDate" type="date"></md-filled-text-field>
+            <md-filled-text-field label="End Date" id="eduEndDate" type="date"></md-filled-text-field>
+          </div>
+          <md-filled-text-field label="CGPA (optional)" id="gpa" type="number" step="0.01" min="0" max="10" style="width: 100%" supporting-text="On 10 scale"></md-filled-text-field>
+        </div>
+
+        <div id="skills-panel" class="tab-panel" role="tabpanel" aria-labelledby="skills-tab" hidden>
+          <h2 data-translate="skills">Skills</h2>
+          <md-filled-text-field label="Skills (comma separated)" id="skills" type="textarea" rows="5" style="width: 100%" supporting-text="e.g., JavaScript, Python, React, Node.js"></md-filled-text-field>
+        </div>
+
+        <div id="certifications-panel" class="tab-panel" role="tabpanel" aria-labelledby="certifications-tab" hidden>
+          <h2 data-translate="certifications">Certifications</h2>
+          <div id="certifications-container">
+            <div class="certification-entry">
+              <md-filled-text-field label="Certification Name" class="cert-name" style="width: 100%"></md-filled-text-field>
+              <md-filled-text-field label="Platform/Issuer" class="cert-platform" style="width: 100%"></md-filled-text-field>
+              <div class="form-row">
+                <md-filled-text-field label="Date Obtained" class="cert-date" type="date"></md-filled-text-field>
+                <md-filled-text-field label="Certificate URL (optional)" class="cert-url" type="url"></md-filled-text-field>
+              </div>
+            </div>
+          </div>
+          <md-outlined-button id="add-certification-btn" style="margin-top: 1rem;">
+            <md-icon slot="icon">add</md-icon>
+            <span data-translate="add_certification">Add Certification</span>
+          </md-outlined-button>
+        </div>
+
+        <div style="margin-top: 20px">
+          <md-filled-button id="generate-btn">
+            <md-icon slot="icon">download</md-icon>
+            <span data-translate="generate_pdf">Generate PDF</span>
+          </md-filled-button>
+        </div>
+      </div>
+
+      <!-- SETTINGS PAGE -->
+      <div id="settings-page" class="page">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <h1 class="text-4xl font-bold" data-translate="settings">Settings</h1>
+          <div class="menu-container">
+            <button class="menu-button" id="menuButtonSettings">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <div class="menu-dropdown" id="menuDropdownSettings">
+              <div class="menu-item" data-action="credit">
+                <span class="material-symbols-outlined">workspace_premium</span>
+                <span data-translate="menu_credit">Credit</span>
+              </div>
+              <div class="menu-item" data-action="about">
+                <span class="material-symbols-outlined">info</span>
+                <span data-translate="menu_about">About</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="settings-card">
+          <h2 class="mb-4" data-translate="appearance">Appearance</h2>
+          
+          <div class="settings-item">
+            <div class="settings-label">
+              <span class="material-symbols-outlined">dark_mode</span>
+              <div>
+                <div class="font-medium" data-translate="dark_mode">Dark Mode</div>
+                <div class="text-sm" style="color: var(--text-secondary)" data-translate="dark_mode_desc">Toggle dark theme</div>
+              </div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="darkModeToggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-card">
+          <h2 class="mb-4" data-translate="language">Language</h2>
+          
+          <div class="settings-item">
+            <div class="settings-label">
+              <span class="material-symbols-outlined">translate</span>
+              <div>
+                <div class="font-medium" data-translate="select_language">Select Language</div>
+                <div class="text-sm" style="color: var(--text-secondary)" data-translate="language_desc">Choose your preferred language</div>
+              </div>
+            </div>
+            <select id="languageSelect">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी (Hindi)</option>
+              <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+              <option value="gu">ગુજરાતી (Gujarati)</option>
+              <option value="mr">मराठी (Marathi)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- THEMES PAGE -->
+      <div id="theme-page" class="page">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <h1 class="text-4xl font-bold" data-translate="themes">Resume Themes</h1>
+          <div class="menu-container">
+            <button class="menu-button" id="menuButtonTheme">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <div class="menu-dropdown" id="menuDropdownTheme">
+              <div class="menu-item" data-action="credit">
+                <span class="material-symbols-outlined">workspace_premium</span>
+                <span data-translate="menu_credit">Credit</span>
+              </div>
+              <div class="menu-item" data-action="about">
+                <span class="material-symbols-outlined">info</span>
+                <span data-translate="menu_about">About</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="theme-card theme-option selected" data-theme="classic" data-format="traditional">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <div>
+              <h3 class="font-medium mb-2" data-translate="theme_classic">Classic Professional</h3>
+              <p class="text-sm mb-3" style="color: var(--text-secondary)" data-translate="theme_classic_desc">Traditional single-column layout - Highly ATS-friendly</p>
+            </div>
+            <span class="ats-badge">ATS ★★★</span>
+          </div>
+          <div class="theme-preview">
+            <div class="theme-color" style="background-color: #1976d2;"></div>
+            <div class="theme-color" style="background-color: #2196f3;"></div>
+            <div class="theme-color" style="background-color: #64b5f6;"></div>
+          </div>
+        </div>
+
+        <div class="theme-card theme-option" data-theme="modern" data-format="two-column">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <div>
+              <h3 class="font-medium mb-2" data-translate="theme_modern">Modern Two-Column</h3>
+              <p class="text-sm mb-3" style="color: var(--text-secondary)" data-translate="theme_modern_desc">Contemporary two-column design - ATS-compatible</p>
+            </div>
+            <span class="ats-badge">ATS ★★☆</span>
+          </div>
+          <div class="theme-preview">
+            <div class="theme-color" style="background-color: #7b1fa2;"></div>
+            <div class="theme-color" style="background-color: #9c27b0;"></div>
+            <div class="theme-color" style="background-color: #ba68c8;"></div>
+          </div>
+        </div>
+
+        <div class="theme-card theme-option" data-theme="elegant" data-format="minimal">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <div>
+              <h3 class="font-medium mb-2" data-translate="theme_elegant">Elegant Minimal</h3>
+              <p class="text-sm mb-3" style="color: var(--text-secondary)" data-translate="theme_elegant_desc">Clean minimal design with subtle accents - ATS-optimized</p>
+            </div>
+            <span class="ats-badge">ATS ★★★</span>
+          </div>
+          <div class="theme-preview">
+            <div class="theme-color" style="background-color: #388e3c;"></div>
+            <div class="theme-color" style="background-color: #4caf50;"></div>
+            <div class="theme-color" style="background-color: #81c784;"></div>
+          </div>
+        </div>
+
+        <div class="theme-card theme-option" data-theme="bold" data-format="executive">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <div>
+              <h3 class="font-medium mb-2" data-translate="theme_bold">Executive Bold</h3>
+              <p class="text-sm mb-3" style="color: var(--text-secondary)" data-translate="theme_bold_desc">Bold header with structured sections - ATS-friendly</p>
+            </div>
+            <span class="ats-badge">ATS ★★★</span>
+          </div>
+          <div class="theme-preview">
+            <div class="theme-color" style="background-color: #d32f2f;"></div>
+            <div class="theme-color" style="background-color: #f44336;"></div>
+            <div class="theme-color" style="background-color: #e57373;"></div>
+          </div>
+        </div>
+
+        <div class="theme-card theme-option" data-theme="creative" data-format="sidebar">
+          <div style="display: flex; justify-content: space-between; align-items: start;">
+            <div>
+              <h3 class="font-medium mb-2" data-translate="theme_creative">Creative Sidebar</h3>
+              <p class="text-sm mb-3" style="color: var(--text-secondary)" data-translate="theme_creative_desc">Eye-catching sidebar layout for creative roles</p>
+            </div>
+            <span class="ats-badge">ATS ★☆☆</span>
+          </div>
+          <div class="theme-preview">
+            <div class="theme-color" style="background-color: #f57c00;"></div>
+            <div class="theme-color" style="background-color: #ff9800;"></div>
+            <div class="theme-color" style="background-color: #ffb74d;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LICENSES PAGE -->
+      <div id="licences-page" class="page">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <h1 class="text-4xl font-bold" data-translate="licences">Licenses & Credits</h1>
+          <div class="menu-container">
+            <button class="menu-button" id="menuButtonLicences">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <div class="menu-dropdown" id="menuDropdownLicences">
+              <div class="menu-item" data-action="credit">
+                <span class="material-symbols-outlined">workspace_premium</span>
+                <span data-translate="menu_credit">Credit</span>
+              </div>
+              <div class="menu-item" data-action="about">
+                <span class="material-symbols-outlined">info</span>
+                <span data-translate="menu_about">About</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="license-card">
+          <h2 class="mb-3">Fonts</h2>
+          
+          <div class="mb-4">
+            <h3 class="font-medium text-lg mb-2">Roboto Font</h3>
+            <p class="text-sm mb-2" style="color: var(--text-secondary)">
+              Copyright 2011 Google Inc. All Rights Reserved.
+            </p>
+            <p class="text-sm" style="color: var(--text-secondary)">
+              Licensed under the Apache License, Version 2.0<br>
+              <a href="https://fonts.google.com/specimen/Roboto/about" target="_blank" class="text-blue-500">View License</a>
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="font-medium text-lg mb-2">Material Symbols</h3>
+            <p class="text-sm mb-2" style="color: var(--text-secondary)">
+              Copyright Google LLC. All Rights Reserved.
+            </p>
+            <p class="text-sm" style="color: var(--text-secondary)">
+              Licensed under the Apache License, Version 2.0<br>
+              <a href="https://fonts.google.com/icons" target="_blank" class="text-blue-500">View License</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <h2 class="mb-3">Libraries & Frameworks</h2>
+          
+          <div class="mb-4">
+            <h3 class="font-medium text-lg mb-2">Material Web Components</h3>
+            <p class="text-sm mb-2" style="color: var(--text-secondary)">
+              Copyright 2021 Google LLC. All Rights Reserved.
+            </p>
+            <p class="text-sm" style="color: var(--text-secondary)">
+              Licensed under the Apache License, Version 2.0<br>
+              <a href="https://github.com/material-components/material-web" target="_blank" class="text-blue-500">View on GitHub</a>
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="font-medium text-lg mb-2">jsPDF</h3>
+            <p class="text-sm mb-2" style="color: var(--text-secondary)">
+              Copyright (c) 2010-2021 James Hall, https://github.com/MrRio/jsPDF
+            </p>
+            <p class="text-sm" style="color: var(--text-secondary)">
+              Licensed under the MIT License<br>
+              <a href="https://github.com/parallax/jsPDF" target="_blank" class="text-blue-500">View on GitHub</a>
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="font-medium text-lg mb-2">Tailwind CSS</h3>
+            <p class="text-sm mb-2" style="color: var(--text-secondary)">
+              Copyright (c) Tailwind Labs, Inc.
+            </p>
+            <p class="text-sm" style="color: var(--text-secondary)">
+              Licensed under the MIT License<br>
+              <a href="https://tailwindcss.com" target="_blank" class="text-blue-500">Visit Website</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <h2 class="mb-3">Apache License 2.0</h2>
+          <div class="text-sm" style="color: var(--text-secondary); line-height: 1.6;">
+            <p class="mb-2">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.</p>
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.</p>
+          </div>
+        </div>
+
+        <div class="license-card">
+          <h2 class="mb-3">MIT License</h2>
+          <div class="text-sm" style="color: var(--text-secondary); line-height: 1.6;">
+            <p class="mb-2">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- End main-content -->
+
+    <!-- Material 3 Fixed Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      
+      <!-- Home Navigation Item -->
+      <div class="nav-item active" data-page="home">
+        <a href="#home" class="nav-content">
+          <div class="nav-icon-wrapper">
+            <span class="material-symbols-outlined">home</span>
+          </div>
+          <span class="nav-label" data-translate="nav_home">Home</span>
+        </a>
+      </div>
+      
+      <!-- Settings Navigation Item -->
+      <div class="nav-item" data-page="settings">
+        <a href="#settings" class="nav-content">
+          <div class="nav-icon-wrapper">
+            <span class="material-symbols-outlined">settings</span>
+          </div>
+          <span class="nav-label" data-translate="nav_settings">Settings</span>
+        </a>
+      </div>
+      
+      <!-- Theme Navigation Item -->
+      <div class="nav-item" data-page="theme">
+        <a href="#theme" class="nav-content">
+          <div class="nav-icon-wrapper">
+            <span class="material-symbols-outlined">palette</span>
+          </div>
+          <span class="nav-label" data-translate="nav_theme">Theme</span>
+        </a>
+      </div>
+      
+      <!-- Licences Navigation Item -->
+      <div class="nav-item" data-page="licences">
+        <a href="#licences" class="nav-content">
+          <div class="nav-icon-wrapper">
+            <span class="material-symbols-outlined">gavel</span>
+          </div>
+          <span class="nav-label" data-translate="nav_licences">Licences</span>
+        </a>
+      </div>
+      
+    </nav>
+
+    <script src="translations.js"></script>
+    <script src="index.js"></script>
+    <script>
+      // Current language and theme
+      let currentLanguage = localStorage.getItem('language') || 'en';
+      let currentTheme = localStorage.getItem('resumeTheme') || 'classic';
+
+      // Apply saved settings
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeToggle').checked = true;
+      }
+      document.getElementById('languageSelect').value = currentLanguage;
+      
+      // Set initial language attribute
+      document.documentElement.lang = currentLanguage;
+      document.body.lang = currentLanguage;
+
+      // Update translations
+      function updateTranslations() {
+        const lang = currentLanguage;
+        document.documentElement.lang = lang;
+        document.body.lang = lang;
+        
+        // Add language-specific class
+        document.body.className = document.body.className.replace(/lang-\w+/g, '');
+        document.body.classList.add(`lang-${lang}`);
+        
+        
+        document.querySelectorAll('[data-translate]').forEach(element => {
+          const key = element.getAttribute('data-translate');
+          if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+      }
+
+      // Initialize translations
+      updateTranslations();
+
+      // Dark mode toggle
+      document.getElementById('darkModeToggle').addEventListener('change', function() {
+        if (this.checked) {
+          document.body.classList.add('dark-mode');
+          localStorage.setItem('darkMode', 'true');
+        } else {
+          document.body.classList.remove('dark-mode');
+          localStorage.setItem('darkMode', 'false');
+        }
+      });
+
+      // Language selector
+      document.getElementById('languageSelect').addEventListener('change', function() {
+        currentLanguage = this.value;
+        localStorage.setItem('language', currentLanguage);
+        updateTranslations();
+      });
+
+      // Theme selector
+      document.querySelectorAll('.theme-option').forEach(option => {
+        option.addEventListener('click', function() {
+          document.querySelectorAll('.theme-option').forEach(o => o.classList.remove('selected'));
+          this.classList.add('selected');
+          currentTheme = this.getAttribute('data-theme');
+          const currentFormat = this.getAttribute('data-format');
+          localStorage.setItem('resumeTheme', currentTheme);
+          localStorage.setItem('resumeFormat', currentFormat);
+        });
+      });
+
+      // Mark selected theme
+      document.querySelector(`[data-theme="${currentTheme}"]`)?.classList.add('selected');
+
+      // Hash navigation
+      function showPage(pageId) {
+        document.querySelectorAll('.page').forEach(page => {
+          page.classList.remove('active');
+        });
+        document.getElementById(pageId + '-page').classList.add('active');
+        
+        document.querySelectorAll('.nav-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        document.querySelector(`[data-page="${pageId}"]`)?.classList.add('active');
+      }
+
+      function handleHashChange() {
+        const hash = window.location.hash.slice(1) || 'home';
+        showPage(hash);
+      }
+
+      window.addEventListener('hashchange', handleHashChange);
+      handleHashChange();
+
+      // Bottom Navigation links
+      document.querySelectorAll('.nav-item a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const page = this.parentElement.getAttribute('data-page');
+          window.location.hash = page;
+        });
+      });
+
+      // Menu functionality
+      function setupMenu(buttonId, dropdownId) {
+        const button = document.getElementById(buttonId);
+        const dropdown = document.getElementById(dropdownId);
+        
+        if (button && dropdown) {
+          button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            // Close all other dropdowns
+            document.querySelectorAll('.menu-dropdown').forEach(d => {
+              if (d !== dropdown) d.classList.remove('show');
+            });
+            dropdown.classList.toggle('show');
+          });
+          
+          // Menu item actions
+          dropdown.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+              const action = this.getAttribute('data-action');
+              dropdown.classList.remove('show');
+              
+              if (action === 'credit') {
+                window.location.hash = 'licences';
+              } else if (action === 'about') {
+                alert('CV Builder v1.0\nA modern resume builder with Material Design 3\n\nBuilt with Material Web Components, jsPDF, and Tailwind CSS.');
+              }
+            });
+          });
+        }
+      }
+      
+      // Setup menus for all pages
+      setupMenu('menuButton', 'menuDropdown');
+      setupMenu('menuButtonSettings', 'menuDropdownSettings');
+      setupMenu('menuButtonTheme', 'menuDropdownTheme');
+      setupMenu('menuButtonLicences', 'menuDropdownLicences');
+      
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.menu-dropdown').forEach(d => {
+          d.classList.remove('show');
+        });
+      });
+    </script>
+  </body>
+</html>
