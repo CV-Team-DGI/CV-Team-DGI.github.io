@@ -36,19 +36,19 @@
       }
     </script>
   </head>
-  <body class="bg-gray-50">
+  <body>
     
     <!-- Main Content -->
     <div class="main-content">
       
       <!-- HOME PAGE -->
       <div id="home-page" class="page active">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <div style="flex: 1;"></div>
-          <div style="display: flex; justify-content: center; flex: 1;">
+        <div class="logo-header">
+          <div></div>
+          <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: transparent; background-color: transparent; color-scheme: light dark;" version="1.1" width="85px" height="78px" viewBox="0 0 131 121"><defs/><g><g data-cell-id="0"><g data-cell-id="1"><g data-cell-id="xYIYWTR4fBfemMnxKGOw-1"><g transform="translate(0.5,0.5)"><rect x="0" y="80" width="130" height="40" fill="#1ba1e2" stroke="#006eaf" pointer-events="all" style="fill: light-dark(rgb(27, 161, 226), rgb(25, 140, 196)); stroke: light-dark(rgb(0, 110, 175), rgb(81, 175, 231));"/></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-2"><g transform="translate(0.5,0.5)"><ellipse cx="65" cy="40" rx="40" ry="40" fill="#008a00" stroke="#005700" pointer-events="all" style="fill: light-dark(rgb(0, 138, 0), rgb(67, 186, 67)); stroke: light-dark(rgb(0, 87, 0), rgb(130, 205, 130));"/></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-4"><g transform="translate(0.5,0.5)"><rect x="30" y="30" width="70" height="50" fill="none" stroke="none" pointer-events="all"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 60px; height: 1px; padding-top: 37px; margin-left: 36px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; max-height: 46px; overflow: hidden; color: #000000; "><div style="display: inline-block; font-size: 42px; font-family: Garamond; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">CV</div></div></div></foreignObject><text x="36" y="79" fill="light-dark(#000000, #ffffff)" font-family="Garamond" font-size="42px" font-weight="bold">CV</text></switch></g></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-5"><g transform="translate(0.5,0.5)"><rect x="5" y="70" width="120" height="40" fill="none" stroke="none" pointer-events="all"/></g><g><g><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 110px; height: 1px; padding-top: 77px; margin-left: 10px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; max-height: 36px; overflow: hidden; color: #000000; "><div style="display: inline-block; font-size: 37px; font-family: 'Times New Roman'; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Builder</div></div></div></foreignObject><text x="65" y="114" fill="light-dark(#000000, #ffffff)" font-family="'Times New Roman'" font-size="37px" text-anchor="middle">Builder</text></switch></g></g></g><g data-cell-id="xYIYWTR4fBfemMnxKGOw-9"><g><path d="M 35 50 Q 55 20 70 35 Q 85 50 77.5 40 Q 70 30 50 15 Q 30 0 55 20" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g></g></g></g></svg>
           </div>
-          <div style="flex: 1; display: flex; justify-content: flex-end;">
+          <div>
             <div class="menu-container">
               <button class="menu-button" id="menuButton">
                 <span class="material-symbols-outlined">more_vert</span>
@@ -94,40 +94,84 @@
 
         <div id="personal-info-panel" class="tab-panel" role="tabpanel" aria-labelledby="personal-info-tab">
           <h2 data-translate="personal_info">Personal Information</h2>
-          <md-filled-text-field label="Full Name" id="fullName" required style="width: 100%"></md-filled-text-field>
+          <md-filled-text-field label="Full Name" id="fullName" required style="width: 100%" class="nav-field"></md-filled-text-field>
           <div class="form-row">
-            <md-filled-text-field label="Email" id="email" type="email" required></md-filled-text-field>
-            <md-filled-text-field label="Phone" id="phone" type="tel" required></md-filled-text-field>
+            <md-filled-text-field label="Email" id="email" type="email" required class="nav-field"></md-filled-text-field>
+            <md-filled-text-field label="Phone" id="phone" type="tel" required class="nav-field"></md-filled-text-field>
           </div>
-          <md-filled-text-field label="Address" id="address" style="width: 100%"></md-filled-text-field>
-          <md-filled-text-field label="LinkedIn (optional)" id="linkedin" style="width: 100%"></md-filled-text-field>
+          <md-filled-text-field label="Address" id="address" style="width: 100%" class="nav-field"></md-filled-text-field>
+          <md-filled-text-field label="LinkedIn (optional)" id="linkedin" style="width: 100%" class="nav-field" data-last-field="true" data-next-tab="experience"></md-filled-text-field>
+          
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <md-filled-button class="next-tab-btn" data-next-tab="experience">
+              <span data-translate="experience">Experience</span>
+              <md-icon slot="icon">arrow_forward</md-icon>
+            </md-filled-button>
+          </div>
         </div>
 
         <div id="experience-panel" class="tab-panel" role="tabpanel" aria-labelledby="experience-tab" hidden>
           <h2 data-translate="experience">Work Experience</h2>
-          <md-filled-text-field label="Job Title" id="jobTitle" style="width: 100%"></md-filled-text-field>
-          <md-filled-text-field label="Company" id="company" style="width: 100%"></md-filled-text-field>
-          <div class="form-row">
-            <md-filled-text-field label="Start Date" id="expStartDate" type="date"></md-filled-text-field>
-            <md-filled-text-field label="End Date" id="expEndDate" type="date"></md-filled-text-field>
+          <div id="experience-container">
+            <div class="experience-entry">
+              <md-filled-text-field label="Job Title" class="exp-title nav-field" style="width: 100%"></md-filled-text-field>
+              <md-filled-text-field label="Company" class="exp-company nav-field" style="width: 100%"></md-filled-text-field>
+              <div class="form-row">
+                <md-filled-text-field label="Start Date" class="exp-start nav-field" type="date"></md-filled-text-field>
+                <md-filled-text-field label="End Date" class="exp-end nav-field" type="date"></md-filled-text-field>
+              </div>
+              <md-filled-text-field label="Description" class="exp-desc nav-field" type="textarea" rows="5" style="width: 100%"></md-filled-text-field>
+            </div>
           </div>
-          <md-filled-text-field label="Description" id="expDescription" type="textarea" rows="5" style="width: 100%"></md-filled-text-field>
+          <md-outlined-button id="add-experience-btn" style="margin-top: 1rem;">
+            <md-icon slot="icon">add</md-icon>
+            <span data-translate="add_experience">Add Experience</span>
+          </md-outlined-button>
+          
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <md-filled-button class="next-tab-btn" data-next-tab="education">
+              <span data-translate="education">Education</span>
+              <md-icon slot="icon">arrow_forward</md-icon>
+            </md-filled-button>
+          </div>
         </div>
 
         <div id="education-panel" class="tab-panel" role="tabpanel" aria-labelledby="education-tab" hidden>
           <h2 data-translate="education">Education</h2>
-          <md-filled-text-field label="Degree" id="degree" style="width: 100%"></md-filled-text-field>
-          <md-filled-text-field label="School" id="school" style="width: 100%"></md-filled-text-field>
-          <div class="form-row">
-            <md-filled-text-field label="Start Date" id="eduStartDate" type="date"></md-filled-text-field>
-            <md-filled-text-field label="End Date" id="eduEndDate" type="date"></md-filled-text-field>
+          <div id="education-container">
+            <div class="education-entry">
+              <md-filled-text-field label="Degree" class="edu-degree nav-field" style="width: 100%"></md-filled-text-field>
+              <md-filled-text-field label="School" class="edu-school nav-field" style="width: 100%"></md-filled-text-field>
+              <div class="form-row">
+                <md-filled-text-field label="Start Date" class="edu-start nav-field" type="date"></md-filled-text-field>
+                <md-filled-text-field label="End Date" class="edu-end nav-field" type="date"></md-filled-text-field>
+              </div>
+              <md-filled-text-field label="CGPA (optional)" class="edu-gpa nav-field" type="number" step="0.01" min="0" max="10" style="width: 100%" supporting-text="On 10 scale"></md-filled-text-field>
+            </div>
           </div>
-          <md-filled-text-field label="CGPA (optional)" id="gpa" type="number" step="0.01" min="0" max="10" style="width: 100%" supporting-text="On 10 scale"></md-filled-text-field>
+          <md-outlined-button id="add-education-btn" style="margin-top: 1rem;">
+            <md-icon slot="icon">add</md-icon>
+            <span data-translate="add_education">Add Education</span>
+          </md-outlined-button>
+          
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <md-filled-button class="next-tab-btn" data-next-tab="skills">
+              <span data-translate="skills">Skills</span>
+              <md-icon slot="icon">arrow_forward</md-icon>
+            </md-filled-button>
+          </div>
         </div>
 
         <div id="skills-panel" class="tab-panel" role="tabpanel" aria-labelledby="skills-tab" hidden>
           <h2 data-translate="skills">Skills</h2>
-          <md-filled-text-field label="Skills (comma separated)" id="skills" type="textarea" rows="5" style="width: 100%" supporting-text="e.g., JavaScript, Python, React, Node.js"></md-filled-text-field>
+          <md-filled-text-field label="Skills (comma separated)" id="skills" type="textarea" rows="5" style="width: 100%" supporting-text="e.g., JavaScript, Python, React, Node.js" class="nav-field" data-last-field="true" data-next-tab="certifications"></md-filled-text-field>
+          
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <md-filled-button class="next-tab-btn" data-next-tab="certifications">
+              <span data-translate="certifications">Certifications</span>
+              <md-icon slot="icon">arrow_forward</md-icon>
+            </md-filled-button>
+          </div>
         </div>
 
         <div id="certifications-panel" class="tab-panel" role="tabpanel" aria-labelledby="certifications-tab" hidden>
@@ -146,13 +190,17 @@
             <md-icon slot="icon">add</md-icon>
             <span data-translate="add_certification">Add Certification</span>
           </md-outlined-button>
+          
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <md-filled-button id="generate-btn">
+              <md-icon slot="icon">download</md-icon>
+              <span data-translate="generate_pdf">Generate PDF</span>
+            </md-filled-button>
+          </div>
         </div>
 
-        <div style="margin-top: 20px">
-          <md-filled-button id="generate-btn">
-            <md-icon slot="icon">download</md-icon>
-            <span data-translate="generate_pdf">Generate PDF</span>
-          </md-filled-button>
+        <div style="margin-top: 20px; display: none;">
+          <!-- Hidden - moved to certifications panel -->
         </div>
       </div>
 
@@ -536,17 +584,27 @@
       // Mark selected theme
       document.querySelector(`[data-theme="${currentTheme}"]`)?.classList.add('selected');
 
-      // Hash navigation
+      // Hash navigation - simple and clean
       function showPage(pageId) {
+        // Hide all pages
         document.querySelectorAll('.page').forEach(page => {
           page.classList.remove('active');
         });
-        document.getElementById(pageId + '-page').classList.add('active');
         
+        // Show target page
+        const targetPage = document.getElementById(pageId + '-page');
+        if (targetPage) {
+          targetPage.classList.add('active');
+        }
+        
+        // Update nav items
         document.querySelectorAll('.nav-item').forEach(item => {
           item.classList.remove('active');
         });
-        document.querySelector(`[data-page="${pageId}"]`)?.classList.add('active');
+        const activeNavItem = document.querySelector(`[data-page="${pageId}"]`);
+        if (activeNavItem) {
+          activeNavItem.classList.add('active');
+        }
       }
 
       function handleHashChange() {
@@ -555,6 +613,8 @@
       }
 
       window.addEventListener('hashchange', handleHashChange);
+      
+      // Initialize on load
       handleHashChange();
 
       // Bottom Navigation links

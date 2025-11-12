@@ -33,6 +33,8 @@ const translations = {
     menu_about: 'About',
     certifications: 'Certifications',
     add_certification: 'Add Certification',
+    add_experience: 'Add Experience',
+    add_education: 'Add Education',
     theme_creative: 'Creative Sidebar',
     theme_creative_desc: 'Eye-catching sidebar layout for creative roles'
   },
@@ -68,6 +70,8 @@ const translations = {
     menu_about: 'परिचय',
     certifications: 'प्रमाणपत्र',
     add_certification: 'प्रमाणपत्र जोड़ें',
+    add_experience: 'अनुभव जोड़ें',
+    add_education: 'शिक्षा जोड़ें',
     theme_creative: 'क्रिएटिव साइडबार',
     theme_creative_desc: 'रचनात्मक भूमिकाओं के लिए आकर्षक साइडबार लेआउट'
   },
@@ -103,6 +107,8 @@ const translations = {
     menu_about: 'ਜਾਣਕਾਰੀ',
     certifications: 'ਸਰਟੀਫਿਕੇਟ',
     add_certification: 'ਸਰਟੀਫਿਕੇਟ ਸ਼ਾਮਲ ਕਰੋ',
+    add_experience: 'ਤਜਰਬਾ ਸ਼ਾਮਲ ਕਰੋ',
+    add_education: 'ਸਿੱਖਿਆ ਸ਼ਾਮਲ ਕਰੋ',
     theme_creative: 'ਰਚਨਾਤਮਕ ਸਾਈਡਬਾਰ',
     theme_creative_desc: 'ਰਚਨਾਤਮਕ ਭੂਮਿਕਾਵਾਂ ਲਈ ਆਕਰਸ਼ਕ ਸਾਈਡਬਾਰ ਲੇਆਉਟ'
   },
@@ -138,6 +144,8 @@ const translations = {
     menu_about: 'વિશે',
     certifications: 'પ્રમાણપત્રો',
     add_certification: 'પ્રમાણપત્ર ઉમેરો',
+    add_experience: 'અનુભવ ઉમેરો',
+    add_education: 'શિક્ષણ ઉમેરો',
     theme_creative: 'ક્રિએટિવ સાઇડબાર',
     theme_creative_desc: 'સર્જનાત્મક ભૂમિકાઓ માટે આકર્ષક સાઇડબાર લેઆઉટ'
   },
@@ -173,6 +181,8 @@ const translations = {
     menu_about: 'माहिती',
     certifications: 'प्रमाणपत्रे',
     add_certification: 'प्रमाणपत्र जोडा',
+    add_experience: 'अनुभव जोडा',
+    add_education: 'शिक्षण जोडा',
     theme_creative: 'क्रिएटिव्ह साइडबार',
     theme_creative_desc: 'सर्जनशील भूमिकांसाठी आकर्षक साइडबार लेआउट'
   }
