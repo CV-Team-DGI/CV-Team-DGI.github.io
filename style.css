@@ -579,6 +579,43 @@ select option {
   height: auto;
 }
 
+/* GitHub Link Styling */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.github-link:hover {
+  background-color: var(--md-sys-color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover svg {
+  transform: rotate(360deg);
+}
+
+.github-text {
+  white-space: nowrap;
+}
+
 @media (max-width: 640px) {
   .logo-header {
     margin-bottom: 1rem;
@@ -598,6 +635,22 @@ select option {
   
   .logo-header > div:nth-child(2) {
     flex: 1;
+  }
+
+  /* GitHub Link Mobile */
+  .github-link {
+    padding: 6px 10px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .github-link svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .github-text {
+    display: none;
   }
 
   .bottom-nav {
