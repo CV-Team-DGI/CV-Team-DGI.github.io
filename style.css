@@ -579,6 +579,12 @@ select option {
   height: auto;
 }
 
+.logo-image {
+  max-width: 80px;
+  height: auto;
+  display: block;
+}
+
 /* GitHub Link Styling */
 .github-link {
   display: inline-flex;
