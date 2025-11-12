@@ -230,6 +230,17 @@ function navigateToTab(tabName) {
   if (panel) {
     panel.hidden = false;
     
+    // Update the md-tabs active tab
+    const tabs = document.querySelector('md-tabs');
+    if (tabs) {
+      // Find the index of the tab we want to navigate to
+      const tabIds = ['personal-info', 'experience', 'education', 'skills', 'certifications'];
+      const tabIndex = tabIds.indexOf(tabName);
+      if (tabIndex !== -1) {
+        tabs.activeTabIndex = tabIndex;
+      }
+    }
+    
     // Focus first field
     setTimeout(() => {
       const firstField = panel.querySelector('.nav-field');

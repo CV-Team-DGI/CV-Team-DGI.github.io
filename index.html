@@ -54,13 +54,9 @@
                 <span class="material-symbols-outlined">more_vert</span>
               </button>
               <div class="menu-dropdown" id="menuDropdown">
-                <div class="menu-item" data-action="credit">
-                  <span class="material-symbols-outlined">workspace_premium</span>
-                  <span data-translate="menu_credit">Credit</span>
-                </div>
-                <div class="menu-item" data-action="about">
-                  <span class="material-symbols-outlined">info</span>
-                  <span data-translate="menu_about">About</span>
+                <div class="menu-item" data-action="license">
+                  <span class="material-symbols-outlined">gavel</span>
+                  <span data-translate="menu_license">LICENSE</span>
                 </div>
               </div>
             </div>
@@ -213,13 +209,9 @@
               <span class="material-symbols-outlined">more_vert</span>
             </button>
             <div class="menu-dropdown" id="menuDropdownSettings">
-              <div class="menu-item" data-action="credit">
-                <span class="material-symbols-outlined">workspace_premium</span>
-                <span data-translate="menu_credit">Credit</span>
-              </div>
-              <div class="menu-item" data-action="about">
-                <span class="material-symbols-outlined">info</span>
-                <span data-translate="menu_about">About</span>
+              <div class="menu-item" data-action="license">
+                <span class="material-symbols-outlined">gavel</span>
+                <span data-translate="menu_license">LICENSE</span>
               </div>
             </div>
           </div>
@@ -274,13 +266,9 @@
               <span class="material-symbols-outlined">more_vert</span>
             </button>
             <div class="menu-dropdown" id="menuDropdownTheme">
-              <div class="menu-item" data-action="credit">
-                <span class="material-symbols-outlined">workspace_premium</span>
-                <span data-translate="menu_credit">Credit</span>
-              </div>
-              <div class="menu-item" data-action="about">
-                <span class="material-symbols-outlined">info</span>
-                <span data-translate="menu_about">About</span>
+              <div class="menu-item" data-action="license">
+                <span class="material-symbols-outlined">gavel</span>
+                <span data-translate="menu_license">LICENSE</span>
               </div>
             </div>
           </div>
@@ -362,27 +350,72 @@
         </div>
       </div>
 
-      <!-- LICENSES PAGE -->
-      <div id="licences-page" class="page">
+      <!-- ABOUT PAGE -->
+      <div id="about-page" class="page">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-          <h1 class="text-4xl font-bold" data-translate="licences">Licenses & Credits</h1>
+          <h1 class="text-4xl font-bold" data-translate="about">About</h1>
           <div class="menu-container">
-            <button class="menu-button" id="menuButtonLicences">
+            <button class="menu-button" id="menuButtonAbout">
               <span class="material-symbols-outlined">more_vert</span>
             </button>
-            <div class="menu-dropdown" id="menuDropdownLicences">
-              <div class="menu-item" data-action="credit">
-                <span class="material-symbols-outlined">workspace_premium</span>
-                <span data-translate="menu_credit">Credit</span>
-              </div>
-              <div class="menu-item" data-action="about">
-                <span class="material-symbols-outlined">info</span>
-                <span data-translate="menu_about">About</span>
+            <div class="menu-dropdown" id="menuDropdownAbout">
+              <div class="menu-item" data-action="license">
+                <span class="material-symbols-outlined">gavel</span>
+                <span data-translate="menu_license">LICENSE</span>
               </div>
             </div>
           </div>
         </div>
-        
+         <div class="license-card">
+          <h2 class="mb-4" style="font-size: 1.5rem; font-weight: 600;">Acknowledgments</h2>
+          <p class="text-base mb-3" style="color: var(--text-primary); line-height: 1.6;">
+            Special thanks to <strong>Prof. Shekhar Tyagi</strong> for his invaluable guidance and mentoring throughout this project. His expertise and support were instrumental in bringing this CV Builder to life.
+          </p>
+        </div>
+        <div class="license-card">
+          <h2 class="mb-4" style="font-size: 1.5rem; font-weight: 600;">Team Members</h2>
+          
+          <div class="mb-6">
+            <h3 class="font-medium text-lg mb-2" style="color: var(--md-sys-color-primary);">Team Leader and Project Management</h3>
+            <p class="text-base" style="color: var(--text-primary); padding-left: 1rem;">Simran</p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-medium text-lg mb-2" style="color: var(--md-sys-color-primary);">Software Development and Version Control</h3>
+            <p class="text-base" style="color: var(--text-primary); padding-left: 1rem;">Shri Ganesh Jha</p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-medium text-lg mb-2" style="color: var(--md-sys-color-primary);">Styling and Documentation</h3>
+            <p class="text-base" style="color: var(--text-primary); padding-left: 1rem;">Shriyansh Satvik</p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-medium text-lg mb-2" style="color: var(--md-sys-color-primary);">Testing</h3>
+            <p class="text-base" style="color: var(--text-primary); padding-left: 1rem;">Subham Kumar</p>
+          </div>
+        </div>
+
+       
+      </div>
+
+      <!-- LICENSE PAGE -->
+      <div id="license-page" class="page">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <h1 class="text-4xl font-bold" data-translate="license">Licenses & Credits</h1>
+          <div class="menu-container">
+            <button class="menu-button" id="menuButtonLicense">
+              <span class="material-symbols-outlined">more_vert</span>
+            </button>
+            <div class="menu-dropdown" id="menuDropdownLicense">
+              <div class="menu-item" data-action="license">
+                <span class="material-symbols-outlined">gavel</span>
+                <span data-translate="menu_license">LICENSE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="license-card">
           <h2 class="mb-3">Fonts</h2>
           
@@ -410,9 +443,7 @@
         </div>
 
         <div class="license-card">
-          <h2 class="mb-3">Libraries & Frameworks</h2>
-          
-          <div class="mb-4">
+          <h2 class="mb-3">Libraries & Frameworks</h2>          <div class="mb-4">
             <h3 class="font-medium text-lg mb-2">Material Web Components</h3>
             <p class="text-sm mb-2" style="color: var(--text-secondary)">
               Copyright 2021 Google LLC. All Rights Reserved.
@@ -479,16 +510,6 @@
         </a>
       </div>
       
-      <!-- Settings Navigation Item -->
-      <div class="nav-item" data-page="settings">
-        <a href="#settings" class="nav-content">
-          <div class="nav-icon-wrapper">
-            <span class="material-symbols-outlined">settings</span>
-          </div>
-          <span class="nav-label" data-translate="nav_settings">Settings</span>
-        </a>
-      </div>
-      
       <!-- Theme Navigation Item -->
       <div class="nav-item" data-page="theme">
         <a href="#theme" class="nav-content">
@@ -499,13 +520,23 @@
         </a>
       </div>
       
-      <!-- Licences Navigation Item -->
-      <div class="nav-item" data-page="licences">
-        <a href="#licences" class="nav-content">
+      <!-- Settings Navigation Item -->
+      <div class="nav-item" data-page="settings">
+        <a href="#settings" class="nav-content">
           <div class="nav-icon-wrapper">
-            <span class="material-symbols-outlined">gavel</span>
+            <span class="material-symbols-outlined">settings</span>
           </div>
-          <span class="nav-label" data-translate="nav_licences">Licences</span>
+          <span class="nav-label" data-translate="nav_settings">Settings</span>
+        </a>
+      </div>
+      
+      <!-- About Navigation Item -->
+      <div class="nav-item" data-page="about">
+        <a href="#about" class="nav-content">
+          <div class="nav-icon-wrapper">
+            <span class="material-symbols-outlined">info</span>
+          </div>
+          <span class="nav-label" data-translate="nav_about">About</span>
         </a>
       </div>
       
@@ -647,10 +678,10 @@
               const action = this.getAttribute('data-action');
               dropdown.classList.remove('show');
               
-              if (action === 'credit') {
-                window.location.hash = 'licences';
+              if (action === 'license') {
+                window.location.hash = 'license';
               } else if (action === 'about') {
-                alert('CV Builder v1.0\nA modern resume builder with Material Design 3\n\nBuilt with Material Web Components, jsPDF, and Tailwind CSS.');
+                window.location.hash = 'about';
               }
             });
           });
@@ -661,7 +692,8 @@
       setupMenu('menuButton', 'menuDropdown');
       setupMenu('menuButtonSettings', 'menuDropdownSettings');
       setupMenu('menuButtonTheme', 'menuDropdownTheme');
-      setupMenu('menuButtonLicences', 'menuDropdownLicences');
+      setupMenu('menuButtonAbout', 'menuDropdownAbout');
+      setupMenu('menuButtonLicense', 'menuDropdownLicense');
       
       // Close dropdowns when clicking outside
       document.addEventListener('click', function() {
